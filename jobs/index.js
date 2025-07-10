@@ -360,7 +360,7 @@ app.get("/updateTargetTime/:time", async (req, res) => {
 });
 
 // Start server
-const PORT = 1234;
+const PORT = 6847;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
