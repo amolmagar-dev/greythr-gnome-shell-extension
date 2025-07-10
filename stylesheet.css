@@ -1,0 +1,132 @@
+
+.swipe-panel {
+    padding: 5px 12px;
+    background-color: rgba(40,40,40,0.85);
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 2px 6px;
+}
+
+.swipe-panel:hover {
+    background-color: rgba(60,60,60,0.95);
+}
+
+.status-icon {
+    margin-right: 8px;
+}
+
+.time-label {
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+}
+
+.modern-menu {
+    padding: 0;
+    border-radius: 16px;
+    background-color: rgba(25, 25, 25, 0.98);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+    margin: 5px;
+}
+
+.main-container {
+    padding: 20px;
+    spacing: 12px;
+}
+
+.header-container {
+    spacing: 12px;
+}
+
+.large-time-label {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00bcd4;
+}
+
+.status-badge {
+    font-size: 10px;
+    font-weight: bold;
+    color: #00ff00;
+    background-color: rgba(0, 255, 0, 0.15);
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    border-radius: 6px;
+    padding: 4px 8px;
+    margin-top: 6px;
+}
+
+.status-badge.out {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.15);
+    border-color: rgba(255, 107, 107, 0.4);
+}
+
+.stats-container {
+    spacing: 6px;
+}
+
+.stats-row {
+    spacing: 6px;
+}
+
+.stat-card {
+    background-color: rgba(45, 45, 45, 0.9);
+    border-radius: 8px;
+    padding: 8px 10px;
+    spacing: 2px;
+    width: 125px;
+}
+
+.stat-value {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.stat-label {
+    font-size: 8px;
+    color: #888888;
+    text-transform: uppercase;
+}
+
+.weekly-container {
+    spacing: 4px;
+}
+
+.day-circle {
+    border-radius: 18px;
+    background-color: rgba(80, 80, 80, 0.7);
+    border: 2px solid rgba(255,255,255,0.15);
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    margin: 0;
+}
+
+.day-circle.completed {
+    background-color: rgba(0, 188, 212, 0.2);
+    border-color: #00bcd4;
+}
+
+.day-circle.today {
+    background-color: #00bcd4;
+    border-color: #00bcd4;
+}
+
+.day-circle.partial {
+    background-color: rgba(255, 193, 7, 0.2);
+    border-color: #ffc107;
+}
+
+.day-letter {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.main-menu-item {
+    padding: 0;
+}
