@@ -1,0 +1,16 @@
+{
+  "name": "GreyTHR Time Tracker",
+  "description": "Track and manage your work hours with GreyTHR integration for GNOME Shell",
+  "uuid": "greythr-gnome-shell-extension",
+  "shell-version": [
+    "42",
+    "43",
+    "44"
+  ],
+  "version": 1,
+  "url": "https://github.com/amolmagar-dev/greythr-gnome-shell-extension",
+  "author": "Amol Magar",
+  "gettext-domain": "greythr-gnome-shell-extension",
+  "settings-schema": "org.gnome.shell.extensions.greythr",
+  "version-name": "1.0.0"
+}
