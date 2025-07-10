@@ -198,7 +198,7 @@
     "yallist": "^4.0.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node jobs/index.js"
   },
   "keywords": [],
   "author": "",
