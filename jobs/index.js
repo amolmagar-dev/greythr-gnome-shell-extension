@@ -86,9 +86,9 @@ const loginAndGetCookies = async () => {
   try {
     await driver.get("https://smartshiphub.greythr.com/uas/portal/auth/login");
     await driver.wait(until.elementLocated(By.id("username")), 10000);
-    await driver.findElement(By.id("username")).sendKeys(process.env.APP_PASSWORD);
-    await driver.wait(until.elementLocated(By.id(process.env.APP_USERNAME)), 10000);
-    await driver.findElement(By.id("password")).sendKeys(process.env.USERNAME, Key.RETURN);
+    await driver.findElement(By.id("username")).sendKeys(process.env.APP_USERNAME);
+    await driver.wait(until.elementLocated(By.id("password")), 10000);
+    await driver.findElement(By.id("password")).sendKeys(process.env.APP_PASSWORD, Key.RETURN);
     await driver.wait(until.urlContains("/home"), 10000);
     console.log("Login successful!");
     cookies = await driver.manage().getCookies();
@@ -303,7 +303,7 @@ setInterval(async () => {
   } catch (err) {
     console.error("Error:", err.message);
   }
-}, 5000); // Run every ~50 seconds
+}, 50000); // Run every ~50 seconds
 
 // Express Server
 const app = express();
@@ -360,7 +360,7 @@ app.get("/updateTargetTime/:time", async (req, res) => {
 });
 
 // Start server
-const PORT = 6847;
+const PORT = 1234;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
