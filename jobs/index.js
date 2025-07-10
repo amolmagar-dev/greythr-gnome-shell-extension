@@ -86,8 +86,8 @@ const loginAndGetCookies = async () => {
   try {
     await driver.get("https://smartshiphub.greythr.com/uas/portal/auth/login");
     await driver.wait(until.elementLocated(By.id("username")), 10000);
-    await driver.findElement(By.id("username")).sendKeys(process.env.PASSWORD);
-    await driver.wait(until.elementLocated(By.id(process.env.USERNAME)), 10000);
+    await driver.findElement(By.id("username")).sendKeys(process.env.APP_PASSWORD);
+    await driver.wait(until.elementLocated(By.id(process.env.APP_USERNAME)), 10000);
     await driver.findElement(By.id("password")).sendKeys(process.env.USERNAME, Key.RETURN);
     await driver.wait(until.urlContains("/home"), 10000);
     console.log("Login successful!");
@@ -303,7 +303,7 @@ setInterval(async () => {
   } catch (err) {
     console.error("Error:", err.message);
   }
-}, 50000); // Run every ~50 seconds
+}, 5000); // Run every ~50 seconds
 
 // Express Server
 const app = express();
